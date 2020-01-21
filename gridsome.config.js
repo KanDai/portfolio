@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Portfolio',
   plugins: [
     {
       use: '@gridsome/source-contentful',
@@ -19,7 +19,6 @@ module.exports = {
     }
   ],
   templates: {
-    // ここは "Contentful + Content model名" になる
     ContentfulWorks: [
       {
         path: '/works/:id',
