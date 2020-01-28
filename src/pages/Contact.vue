@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <h1>Contact</h1>
-    <form name="contact" method="POST" netlify>
+    <form name="contact" method="POST" data-netlify="true">
       <p>
-        <label>Your Name: <input type="text" name="name" /></label>
+        <label>Your Name: <input type="text" name="name" /></label>   
       </p>
       <p>
         <label>Your Email: <input type="email" name="email" /></label>
@@ -18,6 +18,7 @@
         <label>Message: <textarea name="message"></textarea></label>
       </p>
       <p>
+        <input type="hidden" name="form-name" value="contact" />  
         <button type="submit">Send</button>
       </p>
     </form>
